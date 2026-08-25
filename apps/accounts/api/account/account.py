@@ -12,6 +12,7 @@ from accounts.const import ChangeSecretRecordStatusChoice, Source
 from accounts.filters import AccountFilterSet, NodeFilterBackend
 from accounts.mixins import AccountRecordViewLogMixin
 from accounts.models import Account, ChangeSecretRecord, AccountTemplate
+from accounts.permissions import IsPermedAccountSecret
 from assets.const.gpt import create_or_update_chatx_resources
 from assets.models import Asset, Node
 from authentication.permissions import UserConfirmation, ConfirmType
@@ -223,7 +224,7 @@ class AccountSecretsViewSet(AccountRecordViewLogMixin, AccountViewSet):
         'default': serializers.AccountSecretSerializer,
     }
     http_method_names = ['get', 'options']
-    permission_classes = [RBACPermission, UserConfirmation.require(ConfirmType.MFA)]
+    permission_classes = [IsPermedAccountSecret, UserConfirmation.require(ConfirmType.MFA)]
     rbac_perms = {
         'list': 'accounts.view_accountsecret',
         'retrieve': 'accounts.view_accountsecret',

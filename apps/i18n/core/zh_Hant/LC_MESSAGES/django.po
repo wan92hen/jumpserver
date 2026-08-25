@@ -10354,6 +10354,14 @@ msgstr "更多下載"
 msgid "Tools and applications"
 msgstr "工具與應用程式"
 
+#: perms/const.py
+msgid "View secret (password)"
+msgstr "查看密碼"
+
+#: accounts/permissions.py
+msgid "No permission to view account secret"
+msgstr "沒有查看帳號密碼的權限"
+
 #: terminal/api/applet/applet.py:61 terminal/api/virtualapp/virtualapp.py:49
 msgid "Invalid zip file"
 msgstr "無效的 zip 文件"

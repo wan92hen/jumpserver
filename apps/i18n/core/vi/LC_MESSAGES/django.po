@@ -10680,6 +10680,14 @@ msgstr "Tải xuống thêm"
 msgid "Tools and applications"
 msgstr "Công cụ và ứng dụng"
 
+#: perms/const.py
+msgid "View secret (password)"
+msgstr "Xem mật khẩu"
+
+#: accounts/permissions.py
+msgid "No permission to view account secret"
+msgstr "Không có quyền xem bí mật tài khoản"
+
 #: terminal/api/applet/applet.py:61 terminal/api/virtualapp/virtualapp.py:49
 msgid "Invalid zip file"
 msgstr "Tệp zip không hợp lệ"

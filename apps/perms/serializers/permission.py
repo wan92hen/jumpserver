@@ -102,7 +102,8 @@ class AssetPermissionSerializer(ResourceLabelsMixin, BulkOrgResourceModelSeriali
         actions = self.fields.get("actions")
         if not actions:
             return
-        actions.default = ActionChoices.all()
+        # 默认动作不包含"查看密码"，需要显式勾选才授予查看密码权限
+        actions.default = ActionChoices.all() & ~ActionChoices.view_secret
 
     @staticmethod
     def get_all_assets(nodes, assets):

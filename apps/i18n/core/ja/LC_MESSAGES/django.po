@@ -10642,6 +10642,14 @@ msgstr "その他のダウンロード"
 msgid "Tools and applications"
 msgstr "ツールとアプリ"
 
+#: perms/const.py
+msgid "View secret (password)"
+msgstr "パスワードを表示"
+
+#: accounts/permissions.py
+msgid "No permission to view account secret"
+msgstr "アカウントのシークレットを表示する権限がありません"
+
 #: terminal/api/applet/applet.py:61 terminal/api/virtualapp/virtualapp.py:49
 msgid "Invalid zip file"
 msgstr "zip ファイルが無効です"

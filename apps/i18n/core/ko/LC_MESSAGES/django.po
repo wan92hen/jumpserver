@@ -10582,6 +10582,14 @@ msgstr "추가 다운로드"
 msgid "Tools and applications"
 msgstr "도구 및 애플리케이션"
 
+#: perms/const.py
+msgid "View secret (password)"
+msgstr "비밀번호 보기"
+
+#: accounts/permissions.py
+msgid "No permission to view account secret"
+msgstr "계정 비밀번호를 볼 권한이 없습니다"
+
 #: terminal/api/applet/applet.py:61 terminal/api/virtualapp/virtualapp.py:49
 msgid "Invalid zip file"
 msgstr "유효하지 않은 zip 파일"

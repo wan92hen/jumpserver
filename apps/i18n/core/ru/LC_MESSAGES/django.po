@@ -10776,6 +10776,14 @@ msgstr "Дополнительные загрузки"
 msgid "Tools and applications"
 msgstr "Инструменты и приложения"
 
+#: perms/const.py
+msgid "View secret (password)"
+msgstr "Просмотр пароля"
+
+#: accounts/permissions.py
+msgid "No permission to view account secret"
+msgstr "Нет прав на просмотр секрета учетной записи"
+
 #: terminal/api/applet/applet.py:61 terminal/api/virtualapp/virtualapp.py:49
 msgid "Invalid zip file"
 msgstr "Неверный zip файл"

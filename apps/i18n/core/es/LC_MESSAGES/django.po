@@ -10841,6 +10841,14 @@ msgstr "Más descargas"
 msgid "Tools and applications"
 msgstr "Herramientas y aplicaciones"
 
+#: perms/const.py
+msgid "View secret (password)"
+msgstr "Ver contraseña"
+
+#: accounts/permissions.py
+msgid "No permission to view account secret"
+msgstr "Sin permiso para ver el secreto de la cuenta"
+
 #: terminal/api/applet/applet.py:61 terminal/api/virtualapp/virtualapp.py:49
 msgid "Invalid zip file"
 msgstr "archivo zip inválido"
