@@ -294,6 +294,20 @@ class Config(dict):
         'VAULT_OPENBAO_CACERT_CONTENT': '',
         'VAULT_OPENBAO_CACERT_FILE': '',
 
+        # CyberArk CCP only exposes a read API. The password stays in the local
+        # database as a fallback and is resolved from CCP when it is available.
+        # Secrets are located by query attributes, never by object name.
+        'VAULT_CYBERARK_API_URL': '',
+        'VAULT_CYBERARK_APP_ID': '',
+        'VAULT_CYBERARK_SAFE': '',
+        'VAULT_CYBERARK_FOLDER': '',
+        'VAULT_CYBERARK_QUERY_TEMPLATE': 'Safe={safe};Folder={folder};UserName={username}',
+        'VAULT_CYBERARK_TIMEOUT': 3,
+        'VAULT_CYBERARK_VERIFY_TLS': True,
+        'VAULT_CYBERARK_CACERT_FILE': '',
+        'VAULT_CYBERARK_FAIL_ON_PASSWORD_CHANGE': True,
+        'VAULT_CYBERARK_FALLBACK_LOCAL': True,
+
         'VAULT_HCP_HOST': '',
         'VAULT_HCP_TOKEN': '',
         'VAULT_HCP_MOUNT_POINT': 'pam',

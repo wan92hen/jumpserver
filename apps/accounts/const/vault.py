@@ -10,3 +10,4 @@ class VaultTypeChoices(models.TextChoices):
     hcp = 'hcp', _('HCP Vault')
     azure = 'azure', _('Azure Key Vault')
     aws = 'aws', _('Amazon Secrets Manager')
+    cyberark = 'cyberark', _('CyberArk CCP')

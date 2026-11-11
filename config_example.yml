@@ -131,6 +131,23 @@ REDIS_PORT: 6379
 #   ...
 #   -----END CERTIFICATE-----
 
+# CyberArk CCP is a read-only credential source: passwords are read from the
+# CCP REST API while the local database copy is kept as a fallback.
+# CyberArk 只提供读取接口；本地数据库保留密码副本用于兜底。
+# VAULT_CYBERARK_API_URL: https://ccp.example.com
+# VAULT_CYBERARK_APP_ID: JMS
+# VAULT_CYBERARK_SAFE: Linux
+# VAULT_CYBERARK_FOLDER: ''
+# Secrets are located by attributes instead of the object name.
+# Available placeholders: {safe} {folder} {username} {address} {asset_name} {account_name}
+# VAULT_CYBERARK_QUERY_TEMPLATE: 'Safe={safe};Folder={folder};UserName={username}'
+# VAULT_CYBERARK_TIMEOUT: 3
+# VAULT_CYBERARK_VERIFY_TLS: true
+# VAULT_CYBERARK_CACERT_FILE: /opt/jumpserver/data/certs/cyberark/ca.crt
+# VAULT_CYBERARK_FAIL_ON_PASSWORD_CHANGE: true
+# VAULT_CYBERARK_FALLBACK_LOCAL: true
+# Optional asset labels: cyberark_safe, cyberark_folder, cyberark_app_id, cyberark_query
+
 # LDAP/AD settings
 # LDAP 搜索分页数量
 # AUTH_LDAP_SEARCH_PAGED_SIZE: 1000
